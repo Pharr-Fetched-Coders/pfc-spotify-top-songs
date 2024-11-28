@@ -1,0 +1,395 @@
+{
+  "country": [
+    {
+      "artist": "Loretta Lynn",
+      "description": "Loretta Lynn kicks off our country countdown with her empowering anthem 'Coal Miner's Daughter.' Released in 1970, this song is a heartfelt tribute to her Appalachian roots and a tale of resilience, proving Lynn’s voice and spirit are as strong as the mountains.",
+      "rank": 1,
+      "song_name": "Coal Miner's Daughter",
+      "year": 1970
+    },
+    {
+      "artist": "Dolly Parton",
+      "description": "Up next, Dolly Parton brings her unparalleled charm to the stage with 'Jolene.' Released in 1973, this emotional plea tells the story of a woman’s heartfelt appeal to a rival, with Dolly’s vocals capturing both vulnerability and strength.",
+      "rank": 2,
+      "song_name": "Jolene",
+      "year": 1973
+    },
+    {
+      "artist": "Willie Nelson",
+      "description": "Willie Nelson shines with his reflective hit 'Blue Eyes Crying in the Rain.' Released in 1975, this song speaks of lost love and longing, with Nelson’s soulful voice painting a picture as vivid as the Texas skies.",
+      "rank": 3,
+      "song_name": "Blue Eyes Crying in the Rain",
+      "year": 1975
+    },
+    {
+      "artist": "Merle Haggard",
+      "description": "Merle Haggard captures the heart of a working man in 'If We Make It Through December,' released in 1973. This powerful song of hardship and hope resonates with listeners as Haggard’s voice conveys the struggles and dreams of blue-collar America.",
+      "rank": 4,
+      "song_name": "If We Make It Through December",
+      "year": 1973
+    },
+    {
+      "artist": "Kenny Rogers",
+      "description": "Kenny Rogers brings drama to our countdown with 'The Gambler.' Released in 1978, this story-song of risk and wisdom remains a timeless lesson in life’s ups and downs, with Rogers’ smooth, compelling voice delivering every line.",
+      "rank": 5,
+      "song_name": "The Gambler",
+      "year": 1978
+    },
+    {
+      "artist": "Charlie Rich",
+      "description": "Charlie Rich's soulful 'Behind Closed Doors,' released in 1973, captures the allure of romance behind the scenes. With Rich’s smooth vocals, this song became an instant classic, adding a bit of mystery to our country countdown.",
+      "rank": 6,
+      "song_name": "Behind Closed Doors",
+      "year": 1973
+    },
+    {
+      "artist": "Tammy Wynette",
+      "description": "Tammy Wynette returns to the top of the charts with 'Stand by Your Man,' a powerful testament to love and loyalty. Released in 1970, this song became a defining anthem of commitment and resilience.",
+      "rank": 7,
+      "song_name": "Stand by Your Man",
+      "year": 1970
+    },
+    {
+      "artist": "Johnny Cash",
+      "description": "Johnny Cash delivers a haunting narrative with 'Man in Black,' a 1971 release that serves as a reflection on justice and compassion. Cash’s voice is deep and stirring, a reminder of his enduring empathy and grit.",
+      "rank": 8,
+      "song_name": "Man in Black",
+      "year": 1971
+    },
+    {
+      "artist": "George Jones",
+      "description": "George Jones brings heartache to the forefront with 'He Stopped Loving Her Today,' a 1979 release that has since become one of the most poignant songs in country music. Jones’ voice captures the depth of loss and love in every note.",
+      "rank": 9,
+      "song_name": "He Stopped Loving Her Today",
+      "year": 1979
+    },
+    {
+      "artist": "Emmylou Harris",
+      "description": "Emmylou Harris graces our list with her hauntingly beautiful 'Boulder to Birmingham,' released in 1975. This tribute to a lost friend reflects sorrow and strength, with Harris’s voice embodying both.",
+      "rank": 10,
+      "song_name": "Boulder to Birmingham",
+      "year": 1975
+    },
+    {
+      "artist": "Waylon Jennings",
+      "description": "Waylon Jennings brings outlaw country to the countdown with 'Good Hearted Woman,' a 1972 hit that’s a testament to loyalty and resilience, capturing the rebellious spirit of 70s country.",
+      "rank": 11,
+      "song_name": "Good Hearted Woman",
+      "year": 1972
+    },
+    {
+      "artist": "Conway Twitty",
+      "description": "Conway Twitty captures the yearning of love with 'You've Never Been This Far Before,' a 1973 release that conveys intimacy and romance in classic Twitty style.",
+      "rank": 12,
+      "song_name": "You've Never Been This Far Before",
+      "year": 1973
+    },
+    {
+      "artist": "Glen Campbell",
+      "description": "Glen Campbell’s 'Rhinestone Cowboy,' released in 1975, became an anthem of resilience and success, with its catchy chorus and Campbell’s smooth voice making it a staple of 70s country.",
+      "rank": 13,
+      "song_name": "Rhinestone Cowboy",
+      "year": 1975
+    },
+    {
+      "artist": "Charley Pride",
+      "description": "Charley Pride brings a timeless message of unity with 'Kiss an Angel Good Mornin',' a 1971 release that celebrates love and warmth with Pride’s rich baritone voice.",
+      "rank": 14,
+      "song_name": "Kiss an Angel Good Mornin'",
+      "year": 1971
+    },
+    {
+      "artist": "Barbara Mandrell",
+      "description": "Barbara Mandrell brings us 'Sleeping Single in a Double Bed,' a 1978 hit that addresses heartbreak with both sass and sensitivity, capturing the struggles of independence and love.",
+      "rank": 15,
+      "song_name": "Sleeping Single in a Double Bed",
+      "year": 1978
+    },
+    {
+      "artist": "Mickey Gilley",
+      "description": "Mickey Gilley’s 'Room Full of Roses,' released in 1974, is a tribute to love lost and found, with Gilley’s heartfelt delivery making it a standout in country music history.",
+      "rank": 16,
+      "song_name": "Room Full of Roses",
+      "year": 1974
+    },
+    {
+      "artist": "Tanya Tucker",
+      "description": "Tanya Tucker belts out 'Delta Dawn,' a 1972 release that tells the story of a lost love and a hopeful heart, showcasing Tucker’s powerful voice and storytelling prowess.",
+      "rank": 17,
+      "song_name": "Delta Dawn",
+      "year": 1972
+    },
+    {
+      "artist": "Kris Kristofferson",
+      "description": "Kris Kristofferson’s 'Why Me' is a soulful reflection on faith and redemption. Released in 1973, this song became a spiritual anthem, capturing Kristofferson’s journey and the power of grace.",
+      "rank": 18,
+      "song_name": "Why Me",
+      "year": 1973
+    },
+    {
+      "artist": "Jeannie C. Riley",
+      "description": "Jeannie C. Riley brings storytelling to life with 'Harper Valley PTA,' a 1970s classic that takes aim at small-town hypocrisy with wit and charm, making it a memorable part of country music.",
+      "rank": 19,
+      "song_name": "Harper Valley PTA",
+      "year": 1970
+    },
+    {
+      "artist": "Linda Ronstadt",
+      "description": "Linda Ronstadt’s 'Long Long Time,' released in 1970, is a haunting ballad of love and loss, with Ronstadt’s emotive vocals taking listeners on a poignant journey.",
+      "rank": 20,
+      "song_name": "Long Long Time",
+      "year": 1970
+    },
+    {
+      "artist": "Eddie Rabbitt",
+      "description": "Eddie Rabbitt’s 'Drivin' My Life Away,' a 1979 release, tells the tale of life on the road, with its upbeat tempo and relatable lyrics making it a classic.",
+      "rank": 21,
+      "song_name": "Drivin' My Life Away",
+      "year": 1979
+    },
+    {
+      "artist": "Mel Tillis",
+      "description": "Mel Tillis’ 'Coca-Cola Cowboy,' released in 1979, captures the spirit of country swagger and self-assurance, with Tillis’ warm voice bringing charm to every line.",
+      "rank": 22,
+      "song_name": "Coca-Cola Cowboy",
+      "year": 1979
+    },
+    {
+      "artist": "Anne Murray",
+      "description": "Anne Murray’s 'Snowbird' adds a soft touch to our list, with its gentle melody and introspective lyrics making it a timeless favorite since its 1970 release.",
+      "rank": 23,
+      "song_name": "Snowbird",
+      "year": 1970
+    },
+    {
+      "artist": "Ronnie Milsap",
+      "description": "Ronnie Milsap’s 'It Was Almost Like a Song,' released in 1977, is a haunting ballad of love and heartbreak, with Milsap’s rich vocals giving it depth and emotion.",
+      "rank": 24,
+      "song_name": "It Was Almost Like a Song",
+      "year": 1977
+    },
+    {
+      "artist": "Tom T. Hall",
+      "description": "Tom T. Hall’s 'Old Dogs, Children and Watermelon Wine,' a 1972 release, is a touching reflection on life’s simple pleasures, with Hall’s lyrics and storytelling leaving a lasting impact.",
+      "rank": 25,
+      "song_name": "Old Dogs, Children and Watermelon Wine",
+      "year": 1972
+    }
+  ],
+  "pop": [
+    {
+      "artist": "Elton John",
+      "description": "Leading our pop category, Elton John’s 'Your Song' captures the essence of romance and simplicity. Released in 1970, this ballad’s heartfelt lyrics and Elton’s piano-driven melody make it a classic that resonates deeply with listeners.",
+      "rank": 1,
+      "song_name": "Your Song",
+      "year": 1970
+    },
+    {
+      "artist": "Bee Gees",
+      "description": "The Bee Gees light up the disco era with 'Stayin' Alive,' a 1977 anthem of survival and resilience. Its infectious beat and distinctive falsetto harmonies have made it an enduring hit, iconic of the late 70s dance floors.",
+      "rank": 2,
+      "song_name": "Stayin' Alive",
+      "year": 1977
+    },
+    {
+      "artist": "ABBA",
+      "description": "Swedish superstars ABBA take us to new heights with 'Dancing Queen,' a song that perfectly captures the joy and liberation of the disco era. Released in 1976, it remains a beloved anthem for dancing the night away.",
+      "rank": 3,
+      "song_name": "Dancing Queen",
+      "year": 1976
+    },
+    {
+      "artist": "The Carpenters",
+      "description": "Karen Carpenter’s rich, velvety voice brings us 'Close to You,' a pop love song that topped charts in 1970. With lush harmonies and a dreamy melody, this song remains an enduring testament to romance.",
+      "rank": 4,
+      "song_name": "(They Long to Be) Close to You",
+      "year": 1970
+    },
+    {
+      "artist": "Simon & Garfunkel",
+      "description": "Simon & Garfunkel bid farewell with 'Bridge Over Troubled Water,' a 1970 release that captures hope and compassion. Its soulful lyrics and sweeping piano make it a timeless piece of music history.",
+      "rank": 5,
+      "song_name": "Bridge Over Troubled Water",
+      "year": 1970
+    },
+    {
+      "artist": "John Lennon",
+      "description": "John Lennon’s 'Imagine,' released in 1971, offers a vision of unity and peace that resonates across generations. With its simple piano melody, Lennon’s powerful lyrics inspire hope for a better world.",
+      "rank": 6,
+      "song_name": "Imagine",
+      "year": 1971
+    },
+    {
+      "artist": "Michael Jackson",
+      "description": "Michael Jackson brings us 'Rock With You,' a 1979 release that lights up the dance floor. With Jackson’s smooth vocals and a funky beat, this song became a staple of late 70s pop music.",
+      "rank": 7,
+      "song_name": "Rock With You",
+      "year": 1979
+    },
+    {
+      "artist": "Carole King",
+      "description": "Carole King’s 'It’s Too Late,' from her iconic 1971 album 'Tapestry,' blends vulnerability with a catchy melody, capturing the bittersweet end of a relationship with her soulful voice.",
+      "rank": 8,
+      "song_name": "It's Too Late",
+      "year": 1971
+    },
+    {
+      "artist": "Stevie Wonder",
+      "description": "Stevie Wonder’s 'Superstition,' a 1972 release, is a high-energy blend of funk and pop with a memorable riff. Wonder’s dynamic voice and funky beat make it an unforgettable hit.",
+      "rank": 9,
+      "song_name": "Superstition",
+      "year": 1972
+    },
+    {
+      "artist": "Gloria Gaynor",
+      "description": "Gloria Gaynor’s 'I Will Survive,' released in 1978, became an anthem of resilience and empowerment, with Gaynor’s powerful vocals giving strength to listeners around the world.",
+      "rank": 10,
+      "song_name": "I Will Survive",
+      "year": 1978
+    }
+  ],
+  "folk": [
+    {
+      "artist": "Don McLean",
+      "description": "In our folk lineup, Don McLean’s 'American Pie' delivers a poetic journey through American culture and loss. Released in 1971, this epic ballad recounts the 'day the music died,' forever etching its place in music history.",
+      "rank": 1,
+      "song_name": "American Pie",
+      "year": 1971
+    },
+    {
+      "artist": "John Denver",
+      "description": "John Denver captures the beauty of the countryside with 'Take Me Home, Country Roads.' Released in 1971, this song is a tribute to the simplicity and solace of nature, connecting deeply with listeners around the world.",
+      "rank": 2,
+      "song_name": "Take Me Home, Country Roads",
+      "year": 1971
+    },
+    {
+      "artist": "Cat Stevens",
+      "description": "Cat Stevens weaves introspection and wisdom into 'Father and Son,' a song that speaks to the generational divide. Released in 1970, this timeless dialogue resonates with listeners of all ages.",
+      "rank": 3,
+      "song_name": "Father and Son",
+      "year": 1970
+    },
+    {
+      "artist": "James Taylor",
+      "description": "James Taylor’s soothing 'Fire and Rain' reflects on friendship, loss, and hope. Released in 1970, it has become an anthem of introspection and resilience with Taylor’s warm voice guiding the way.",
+      "rank": 4,
+      "song_name": "Fire and Rain",
+      "year": 1970
+    },
+    {
+      "artist": "Jim Croce",
+      "description": "Jim Croce’s 'Time in a Bottle' speaks of love and mortality in a tender, timeless way. Released posthumously in 1973, it has touched countless hearts with its delicate beauty.",
+      "rank": 5,
+      "song_name": "Time in a Bottle",
+      "year": 1973
+    },
+    {
+      "artist": "Carly Simon",
+      "description": "Carly Simon’s 'You’re So Vain' captures intrigue and wit. Released in 1972, this song became a cultural phenomenon, with Simon’s vocals full of strength and sass.",
+      "rank": 6,
+      "song_name": "You're So Vain",
+      "year": 1972
+    },
+    {
+      "artist": "Harry Chapin",
+      "description": "Harry Chapin’s 'Cat's in the Cradle,' released in 1974, is a touching story of father-son relationships, a poignant reminder of time's passing and connections lost and found.",
+      "rank": 7,
+      "song_name": "Cat's in the Cradle",
+      "year": 1974
+    },
+    {
+      "artist": "Gordon Lightfoot",
+      "description": "Gordon Lightfoot’s 'If You Could Read My Mind,' released in 1970, captures the raw pain of heartbreak, with Lightfoot’s voice delivering every word with honesty and depth.",
+      "rank": 8,
+      "song_name": "If You Could Read My Mind",
+      "year": 1970
+    },
+    {
+      "artist": "Bob Dylan",
+      "description": "Bob Dylan’s 'Tangled Up in Blue,' a 1975 release, showcases Dylan’s unique storytelling, taking listeners on a journey through memories and loves lost.",
+      "rank": 9,
+      "song_name": "Tangled Up in Blue",
+      "year": 1975
+    },
+    {
+      "artist": "Paul Simon",
+      "description": "Paul Simon’s '50 Ways to Leave Your Lover,' released in 1975, is both witty and soulful, with a catchy beat and Simon’s clever lyrics exploring the complexities of relationships.",
+      "rank": 10,
+      "song_name": "50 Ways to Leave Your Lover",
+      "year": 1975
+    }
+  ],
+  "soft_rock": [
+    {
+      "artist": "Fleetwood Mac",
+      "description": "Fleetwood Mac’s 'Dreams' opens our soft rock category with its haunting melody and introspective lyrics. Released in 1977, this song captures the magic and melancholy of relationships with Stevie Nicks’ ethereal vocals.",
+      "rank": 1,
+      "song_name": "Dreams",
+      "year": 1977
+    },
+    {
+      "artist": "The Eagles",
+      "description": "The Eagles' 'Hotel California' brings mystery and allure to soft rock. Released in 1976, this iconic track explores themes of excess and escapism, with its unforgettable guitar solos creating a sense of timeless intrigue.",
+      "rank": 2,
+      "song_name": "Hotel California",
+      "year": 1976
+    },
+    {
+      "artist": "Chicago",
+      "description": "Chicago’s 'If You Leave Me Now' is a tender ballad that highlights heartbreak and reconciliation. Released in 1976, its soft, melodic rhythm makes it a soft rock staple.",
+      "rank": 3,
+      "song_name": "If You Leave Me Now",
+      "year": 1976
+    },
+    {
+      "artist": "Bread",
+      "description": "Bread’s 'Make It with You' combines gentle instrumentation with heartfelt lyrics. Released in 1970, this track became a defining song for soft rock lovers everywhere.",
+      "rank": 4,
+      "song_name": "Make It with You",
+      "year": 1970
+    },
+    {
+      "artist": "James Taylor",
+      "description": "James Taylor’s 'You’ve Got a Friend,' released in 1971, speaks to the power of friendship and support. With Taylor’s warm vocals, this song offers comfort and reassurance.",
+      "rank": 5,
+      "song_name": "You've Got a Friend",
+      "year": 1971
+    },
+    {
+      "artist": "Carole King",
+      "description": "Carole King’s 'So Far Away' brings a sense of longing and nostalgia to soft rock. Released in 1971, this song explores distance and the bonds that endure despite it.",
+      "rank": 6,
+      "song_name": "So Far Away",
+      "year": 1971
+    },
+    {
+      "artist": "Seals & Crofts",
+      "description": "Seals & Crofts' 'Summer Breeze' fills the air with warmth and relaxation. Released in 1972, this track captures the essence of summer with its soft guitar and calming harmonies.",
+      "rank": 7,
+      "song_name": "Summer Breeze",
+      "year": 1972
+    },
+    {
+      "artist": "Carpenters",
+      "description": "The Carpenters' 'Rainy Days and Mondays,' released in 1971, is a tender exploration of melancholy, with Karen Carpenter’s voice wrapping around each note.",
+      "rank": 8,
+      "song_name": "Rainy Days and Mondays",
+      "year": 1971
+    },
+    {
+      "artist": "Elton John",
+      "description": "Elton John’s 'Daniel,' a 1973 release, tells a touching story of love and loss with Elton’s expressive piano and vocal delivery.",
+      "rank": 9,
+      "song_name": "Daniel",
+      "year": 1973
+    },
+    {
+      "artist": "America",
+      "description": "America’s 'A Horse with No Name,' released in 1971, is a soft rock classic, transporting listeners with its desert imagery and relaxed beat.",
+      "rank": 10,
+      "song_name": "A Horse with No Name",
+      "year": 1971
+    }
+  ]
+}

@@ -1,0 +1,710 @@
+{
+  "country": [
+    {
+      "rank": 1,
+      "song_name": "Ring of Fire",
+      "artist": "Johnny Cash",
+      "year": 1963,
+      "description": "At the top of our country countdown, we have the Man in Black himself, Johnny Cash, with his fiery hit 'Ring of Fire.' Released in 1963, this song ignites the airwaves with its passionate tale of love's burning embrace, fueled by Cash's signature baritone and mariachi horns that set the stage ablaze."
+    },
+    {
+      "rank": 2,
+      "song_name": "Crazy",
+      "artist": "Patsy Cline",
+      "year": 1961,
+      "description": "Patsy Cline spins a tale of heartache and longing with her timeless classic 'Crazy.' Released in 1961, this song paints a portrait of love's turbulent journey, with Cline's emotive vocals soaring over lush strings, capturing the pain and beauty of unrequited affection."
+    },
+    {
+      "rank": 3,
+      "song_name": "Stand by Your Man",
+      "artist": "Tammy Wynette",
+      "year": 1968,
+      "description": "Tammy Wynette stands tall with her enduring anthem of loyalty, 'Stand by Your Man.' Released in 1968, this song is a testament to the strength of devotion, with Wynette's powerhouse vocals and heartfelt lyrics striking a chord with listeners, reminding us that love conquers all."
+    },
+    {
+      "rank": 4,
+      "song_name": "Mama Tried",
+      "artist": "Merle Haggard",
+      "year": 1968,
+      "description": "Merle Haggard takes us on a journey of regret and redemption with 'Mama Tried.' Released in 1968, this song is a poignant reflection on the consequences of youthful indiscretion, with Haggard's raw vocals and twangy guitar capturing the struggles of a wayward soul seeking forgiveness."
+    },
+    {
+      "rank": 5,
+      "song_name": "Coat of Many Colors",
+      "artist": "Dolly Parton",
+      "year": 1969,
+      "description": "Dolly Parton weaves a tapestry of love and resilience with her heartfelt ballad 'Coat of Many Colors.' Released in 1969, this song is a testament to the power of family and the enduring spirit of hope, with Parton's angelic vocals and tender lyrics painting a portrait of childhood innocence."
+    },
+    {
+      "rank": 6,
+      "song_name": "Gentle on My Mind",
+      "artist": "Glen Campbell",
+      "year": 1967,
+      "description": "Glen Campbell serenades us with his timeless hit 'Gentle on My Mind.' Released in 1967, this song is a love letter to the open road, with Campbell's smooth vocals and twangy guitar evoking the freedom and wanderlust of a troubadour's journey."
+    },
+    {
+      "rank": 7,
+      "song_name": "He Stopped Loving Her Today",
+      "artist": "George Jones",
+      "year": 1967,
+      "description": "George Jones delivers a masterclass in heartbreak with 'He Stopped Loving Her Today.' Released in 1967, this song is a poignant tribute to lost love, with Jones' soulful vocals and evocative storytelling capturing the pain of a broken heart that endures even in death."
+    },
+    {
+      "rank": 8,
+      "song_name": "Coal Miner's Daughter",
+      "artist": "Loretta Lynn",
+      "year": 1969,
+      "description": "Loretta Lynn shares her remarkable journey from humble beginnings with 'Coal Miner's Daughter.' Released in 1969, this song is a celebration of grit and determination, with Lynn's powerhouse vocals and poignant lyrics shining a light on the resilience of the human spirit."
+    },
+    {
+      "rank": 9,
+      "song_name": "Act Naturally",
+      "artist": "Buck Owens",
+      "year": 1963,
+      "description": "Buck Owens brings a touch of humor to our countdown with 'Act Naturally.' Released in 1963, this song is a lighthearted romp through the trials and tribulations of love, with Owens' twangy vocals and playful lyrics reminding us to laugh through life's ups and downs."
+    },
+    {
+      "rank": 10,
+      "song_name": "Family Tradition",
+      "artist": "Hank Williams Jr.",
+      "year": 1969,
+      "description": "Hank Williams Jr. carries on the family legacy with 'Family Tradition.' Released in 1969, this song is a rollicking tribute to the outlaw spirit that runs deep in the Williams bloodline, with Junior's irreverent lyrics and infectious energy keeping the honky-tonk tradition alive and kicking."
+    },
+    {
+      "rank": 11,
+      "song_name": "Folsom Prison Blues",
+      "artist": "Johnny Cash",
+      "year": 1955,
+      "description": "Johnny Cash takes us inside the walls of Folsom Prison with his iconic song 'Folsom Prison Blues.' Released in 1955 but gaining significant popularity in the '60s, this song is a gritty portrayal of life behind bars, with Cash's haunting vocals and train-like rhythm capturing the essence of longing and redemption."
+    },
+    {
+      "rank": 12,
+      "song_name": "Jolene",
+      "artist": "Dolly Parton",
+      "year": 1973,
+      "description": "Dolly Parton confronts the green-eyed monster with 'Jolene.' Released in 1973, this song is a haunting plea for fidelity, with Parton's angelic vocals and heartfelt lyrics capturing the pain and insecurity of jealousy, making it a timeless tale of love and longing."
+    },
+    {
+      "rank": 13,
+      "song_name": "El Paso",
+      "artist": "Marty Robbins",
+      "year": 1959,
+      "description": "Marty Robbins takes us on a journey to the Old West with 'El Paso.' Released in 1959 but enjoying continued popularity in the '60s, this song is a ballad of love and betrayal, with Robbins' velvety voice and twangy guitar painting a vivid portrait of passion and tragedy beneath the desert skies."
+    },
+    {
+      "rank": 14,
+      "song_name": "Harper Valley P.T.A.",
+      "artist": "Jeannie C. Riley",
+      "year": 1968,
+      "description": "Jeannie C. Riley shakes up the status quo with 'Harper Valley P.T.A.' Released in 1968, this song is a sassy indictment of small-town hypocrisy, with Riley's feisty vocals and cheeky lyrics exposing the scandals lurking behind closed doors, making it a rebellious anthem for truth and justice."
+    },
+    {
+      "rank": 15,
+      "song_name": "Wichita Lineman",
+      "artist": "Glen Campbell",
+      "year": 1968,
+      "description": "Glen Campbell serenades us with 'Wichita Lineman.' Released in 1968, this song is a soulful ode to loneliness and longing, with Campbell's velvety vocals and haunting melody capturing the heartache of a solitary figure standing watch over the endless expanse of the Kansas plains."
+    },
+    {
+      "rank": 16,
+      "song_name": "Okie from Muskogee",
+      "artist": "Merle Haggard",
+      "year": 1969,
+      "description": "Merle Haggard raises a defiant voice with 'Okie from Muskogee.' Released in 1969, this song is a patriotic anthem of Middle America, with Haggard's twangy vocals and proud lyrics celebrating the values of heartland life, making it a rallying cry for traditionalism in a changing world."
+    },
+    {
+      "rank": 17,
+      "song_name": "Behind Closed Doors",
+      "artist": "Charlie Rich",
+      "year": 1973,
+      "description": "Charlie Rich takes us into the shadows with 'Behind Closed Doors.' Released in 1973, this song is a sultry exploration of love's secret pleasures, with Rich's smooth vocals and seductive groove inviting us to peek behind the curtain and indulge in the mysteries of desire."
+    },
+    {
+      "rank": 18,
+      "song_name": "Help Me Make It Through the Night",
+      "artist": "Sammi Smith",
+      "year": 1970,
+      "description": "Sammi Smith offers a late-night plea with 'Help Me Make It Through the Night.' Released in 1970, this song is a smoky serenade of desire and desperation, with Smith's soulful vocals and intimate lyrics capturing the longing and vulnerability of a midnight rendezvous."
+    },
+    {
+      "rank": 19,
+      "song_name": "Me and Bobby McGee",
+      "artist": "Kris Kristofferson",
+      "year": 1971,
+      "description": "Kris Kristofferson takes us on a journey with 'Me and Bobby McGee.' Released in 1971, this song is a bittersweet tale of freedom and wanderlust, with Kristofferson's heartfelt lyrics and gravelly vocals painting a vivid portrait of life on the open road, making it a timeless anthem for restless spirits everywhere."
+    },
+    {
+      "rank": 20,
+      "song_name": "Stand by Me",
+      "artist": "Ben E. King",
+      "year": 1961,
+      "description": "Ben E. King offers a shoulder to lean on with 'Stand by Me.' Released in 1961, this song is a timeless declaration of friendship and solidarity, with King's soulful vocals and infectious groove reminding us that we're never alone when we have someone to stand by our side."
+    },
+    {
+      "rank": 21,
+      "song_name": "Big Iron",
+      "artist": "Marty Robbins",
+      "year": 1959,
+      "description": "Marty Robbins paints a vivid picture of the Wild West with 'Big Iron.' Released in 1959 but enjoying continued popularity in the '60s, this song is a cowboy ballad of law and order, with Robbins' smooth vocals and cinematic storytelling transporting us to a world of six-shooters and showdowns."
+    },
+    {
+      "rank": 22,
+      "song_name": "The Ballad of Ira Hayes",
+      "artist": "Johnny Cash",
+      "year": 1964,
+      "description": "Johnny Cash honors a fallen hero with 'The Ballad of Ira Hayes.' Released in 1964, this song is a poignant tribute to the Native American soldier who raised the flag at Iwo Jima, with Cash's solemn vocals and stirring lyrics reminding us of the sacrifices made in the name of freedom."
+    },
+    {
+      "rank": 23,
+      "song_name": "Luckenbach, Texas (Back to the Basics of Love)",
+      "artist": "Waylon Jennings",
+      "year": 1977,
+      "description": "Waylon Jennings takes us back to the heart of country with 'Luckenbach, Texas (Back to the Basics of Love).' Released in 1977, this song is a honky-tonk anthem of simplicity and sincerity, with Jennings' rugged vocals and twangy guitar celebrating the timeless truths found in small-town life."
+    },
+    {
+      "rank": 24,
+      "song_name": "King of the Road",
+      "artist": "Roger Miller",
+      "year": 1964,
+      "description": "Roger Miller hits the highway with 'King of the Road.' Released in 1964, this song is a whimsical ode to the vagabond life, with Miller's playful lyrics and laid-back charm capturing the freedom and camaraderie of the open road, making it a favorite for travelers and troubadours alike."
+    },
+    {
+      "rank": 25,
+      "song_name": "I Walk the Line",
+      "artist": "Johnny Cash",
+      "year": 1956,
+      "description": "Johnny Cash draws a line in the sand with his classic hit 'I Walk the Line.' Released in 1956 but maintaining its popularity throughout the '60s, this song is a declaration of fidelity and devotion, with Cash's deep baritone and steady rhythm serving as a steadfast pledge of love."
+    }
+  ],
+  "pop": [
+    {
+      "rank": 1,
+      "song_name": "Hey Jude",
+      "artist": "The Beatles",
+      "year": 1968,
+      "description": "At the pinnacle of pop perfection, we find The Beatles with their anthemic masterpiece 'Hey Jude.' Released in 1968, this song is a beacon of hope and unity, with its soaring melody and uplifting lyrics inspiring generations to come, proving that love truly is all you need."
+    },
+    {
+      "rank": 2,
+      "song_name": "You Can't Hurry Love",
+      "artist": "The Supremes",
+      "year": 1966,
+      "description": "The Supremes deliver a message of patience and perseverance with 'You Can't Hurry Love.' Released in 1966, this song is a testament to the power of resilience, with its infectious groove and empowering lyrics reminding us that true love is worth waiting for."
+    },
+    {
+      "rank": 3,
+      "song_name": "Good Vibrations",
+      "artist": "The Beach Boys",
+      "year": 1966,
+      "description": "The Beach Boys transport us to paradise with their sun-kissed hit 'Good Vibrations.' Released in 1966, this song is a symphony of surf and sunshine, with its lush harmonies and innovative production capturing the essence of California cool, making it an eternal summer anthem."
+    },
+    {
+      "rank": 4,
+      "song_name": "Can't Help Falling in Love",
+      "artist": "Elvis Presley",
+      "year": 1961,
+      "description": "The King of Rock 'n' Roll himself, Elvis Presley, melts hearts with 'Can't Help Falling in Love.' Released in 1961, this timeless ballad captures the magic of romance, with Presley's velvety voice and tender delivery turning every moment into a serenade under the stars."
+    },
+    {
+      "rank": 5,
+      "song_name": "Be My Baby",
+      "artist": "The Ronettes",
+      "year": 1963,
+      "description": "The Ronettes deliver a dose of pure pop perfection with 'Be My Baby.' Released in 1963, this song is a Wall of Sound spectacle, with Phil Spector's lush production and Ronnie Spector's powerhouse vocals creating a symphony of love that's impossible to resist."
+    },
+    {
+      "rank": 6,
+      "song_name": "My Girl",
+      "artist": "The Temptations",
+      "year": 1964,
+      "description": "The Temptations capture the essence of romance with 'My Girl.' Released in 1964, this song is a timeless declaration of love, with its sweet melodies and heartfelt lyrics serving as a serenade to the beauty of true affection."
+    },
+    {
+      "rank": 7,
+      "song_name": "You've Lost That Lovin' Feelin'",
+      "artist": "The Righteous Brothers",
+      "year": 1964,
+      "description": "The Righteous Brothers tug at our heartstrings with 'You've Lost That Lovin' Feelin'.' Released in 1964, this song is a soul-stirring ballad of heartbreak, with Bill Medley and Bobby Hatfield's impassioned vocals taking us on a journey through the highs and lows of love."
+    },
+    {
+      "rank": 8,
+      "song_name": "Can't Take My Eyes Off You",
+      "artist": "The Four Seasons",
+      "year": 1967,
+      "description": "The Four Seasons captivate us with 'Can't Take My Eyes Off You.' Released in 1967, this song is a timeless declaration of love, with its soaring melodies and heartfelt lyrics capturing the magic of romance, making every moment feel like a dance in the moonlight."
+    },
+    {
+      "rank": 9,
+      "song_name": "I'm a Believer",
+      "artist": "The Monkees",
+      "year": 1966,
+      "description": "The Monkees spread infectious joy with 'I'm a Believer.' Released in 1966, this song is a feel-good anthem, with its irresistible hooks and jubilant spirit capturing the essence of pop perfection, proving that sometimes, love truly is just a dream come true."
+    },
+    {
+      "rank": 10,
+      "song_name": "Respect",
+      "artist": "Aretha Franklin",
+      "year": 1967,
+      "description": "The Queen of Soul herself, Aretha Franklin, demands 'Respect.' Released in 1967, this song is an empowering anthem, with Franklin's powerhouse vocals and assertive lyrics demanding the recognition and dignity she deserves, inspiring generations to stand up and be counted."
+    },
+    {
+      "rank": 11,
+      "song_name": "A Hard Day's Night",
+      "artist": "The Beatles",
+      "year": 1964,
+      "description": "The Beatles kick off our pop countdown with 'A Hard Day's Night.' Released in 1964, this song is a rollicking tribute to the trials and triumphs of a long day's work, with its infectious energy and catchy melodies capturing the excitement and exhaustion of youthful exuberance."
+    },
+    {
+      "rank": 12,
+      "song_name": "Dancing in the Street",
+      "artist": "Martha and the Vandellas",
+      "year": 1964,
+      "description": "Martha and the Vandellas heat up the dance floor with 'Dancing in the Street.' Released in 1964, this song is a sizzling celebration of summertime fun, with its infectious groove and exuberant vocals inviting everyone to join the party in the streets, making it an irresistible anthem of liberation and joy."
+    },
+    {
+      "rank": 13,
+      "song_name": "I Want to Hold Your Hand",
+      "artist": "The Beatles",
+      "year": 1963,
+      "description": "The Beatles ignite Beatlemania with 'I Want to Hold Your Hand.' Released in 1963, this song is a jubilant declaration of young love, with its infectious melody and catchy hooks capturing the hearts of millions, marking the beginning of a musical revolution that would change the world."
+    },
+    {
+      "rank": 14,
+      "song_name": "God Only Knows",
+      "artist": "The Beach Boys",
+      "year": 1966,
+      "description": "The Beach Boys deliver a heavenly masterpiece with 'God Only Knows.' Released in 1966, this song is a symphony of love and devotion, with its lush harmonies and tender lyrics capturing the beauty and uncertainty of human emotion, making it a timeless testament to the power of music to touch the soul."
+    },
+    {
+      "rank": 15,
+      "song_name": "I Heard It Through the Grapevine",
+      "artist": "Marvin Gaye",
+      "year": 1968,
+      "description": "Marvin Gaye shares a tale of betrayal and heartache with 'I Heard It Through the Grapevine.' Released in 1968, this song is a soul-stirring journey through the trials of love, with Gaye's smooth vocals and haunting melody capturing the pain of a shattered trust, making it a timeless classic of the Motown era."
+    },
+    {
+      "rank": 16,
+      "song_name": "Brown Eyed Girl",
+      "artist": "Van Morrison",
+      "year": 1967,
+      "description": "Van Morrison serenades us with his timeless hit 'Brown Eyed Girl.' Released in 1967, this song is a joyful celebration of youth and innocence, with its catchy melody and nostalgic lyrics capturing the magic of summer romance, making it a perennial favorite for lovers and dreamers alike."
+    },
+    {
+      "rank": 17,
+      "song_name": "California Dreamin'",
+      "artist": "The Mamas & The Papas",
+      "year": 1965,
+      "description": "The Mamas & The Papas transport us to the sunny shores of California with 'California Dreamin'.' Released in 1965, this song is a wistful ode to longing and escape, with its haunting harmonies and dreamy melody capturing the allure of the West Coast, making it a timeless anthem of wanderlust and yearning."
+    },
+    {
+      "rank": 18,
+      "song_name": "Mrs. Robinson",
+      "artist": "Simon & Garfunkel",
+      "year": 1968,
+      "description": "Simon & Garfunkel capture the spirit of a generation with 'Mrs. Robinson.' Released in 1968, this song is a sardonic commentary on the disillusionment of suburbia, with its witty lyrics and infectious groove providing a soundtrack for the turbulent times of the '60s, making it a cultural touchstone that continues to resonate today."
+    },
+    {
+      "rank": 19,
+      "song_name": "Oh, Pretty Woman",
+      "artist": "Roy Orbison",
+      "year": 1964,
+      "description": "Roy Orbison serenades us with his classic hit 'Oh, Pretty Woman.' Released in 1964, this song is a rock 'n' roll romance, with Orbison's velvety voice and catchy riff capturing the allure of a mysterious beauty, making it an enduring anthem of desire and devotion."
+    },
+    {
+      "rank": 20,
+      "song_name": "Son of a Preacher Man",
+      "artist": "Dusty Springfield",
+      "year": 1968,
+      "description": "Dusty Springfield gets down and dirty with 'Son of a Preacher Man.' Released in 1968, this song is a sultry confession of forbidden desire, with Springfield's smoky vocals and gritty groove capturing the thrill of temptation and the ecstasy of surrender, making it a timeless classic of soulful seduction."
+    },
+    {
+      "rank": 21,
+      "song_name": "I Can't Help Myself (Sugar Pie Honey Bunch)",
+      "artist": "Four Tops",
+      "year": 1965,
+      "description": "The Four Tops deliver a sweet symphony of love with 'I Can't Help Myself (Sugar Pie Honey Bunch).' Released in 1965, this song is a joyful declaration of affection, with its infectious groove and catchy hooks capturing the irresistible charm of young romance, making it a timeless favorite for lovers everywhere."
+    },
+    {
+      "rank": 22,
+      "song_name": "Ain't No Mountain High Enough",
+      "artist": "Marvin Gaye & Tammi Terrell",
+      "year": 1967,
+      "description": "Marvin Gaye and Tammi Terrell scale the heights of love with 'Ain't No Mountain High Enough.' Released in 1967, this song is a soaring testament to the power of devotion, with its triumphant melody and impassioned vocals capturing the unbreakable bond between soulmates, making it an eternal anthem of love's conquering spirit."
+    },
+    {
+      "rank": 23,
+      "song_name": "Yesterday",
+      "artist": "The Beatles",
+      "year": 1965,
+      "description": "The Beatles tug at our heartstrings with 'Yesterday.' Released in 1965, this song is a poignant reflection on lost love and regret, with its haunting melody and introspective lyrics capturing the bittersweet beauty of memory, making it a timeless classic that continues to resonate across generations."
+    },
+    {
+      "rank": 24,
+      "song_name": "Every Breath You Take",
+      "artist": "The Police",
+      "year": 1983,
+      "description": "The Police offer a cautionary tale of obsession with 'Every Breath You Take.' Released in 1983 but gaining popularity in the late '60s, this song is a haunting meditation on love and surveillance, with Sting's plaintive vocals and eerie melody capturing the dark side of desire, making it a chilling reminder that sometimes, love can be a dangerous game."
+    },
+    {
+      "rank": 25,
+      "song_name": "I Want to Know What Love Is",
+      "artist": "Foreigner",
+      "year": 1984,
+      "description": "Foreigner delves into the mysteries of the heart with 'I Want to Know What Love Is.' Released in 1984 but echoing the sentiments of the '60s, this song is a soulful exploration of longing and vulnerability, with its powerful vocals and heartfelt lyrics capturing the universal quest for connection and understanding."
+    }
+  ],
+  "folk": [
+    {
+      "rank": 1,
+      "song_name": "Blowin' in the Wind",
+      "artist": "Bob Dylan",
+      "year": 1963,
+      "description": "Bob Dylan poses timeless questions with 'Blowin' in the Wind.' Released in 1963, this folk anthem became an anthem of the civil rights movement, with its powerful lyrics and haunting melody inspiring generations to seek justice and equality, making it a timeless testament to the power of music to change the world."
+    },
+    {
+      "rank": 2,
+      "song_name": "The Times They Are A-Changin'",
+      "artist": "Bob Dylan",
+      "year": 1964,
+      "description": "Bob Dylan sounds the call for social change with 'The Times They Are A-Changin'.' Released in 1964, this folk anthem became an anthem of the turbulent '60s, with its prophetic lyrics and defiant spirit rallying a generation to stand up and fight for their beliefs, making it a timeless rallying cry for justice and freedom."
+    },
+    {
+      "rank": 3,
+      "song_name": "Mr. Tambourine Man",
+      "artist": "Bob Dylan",
+      "year": 1965,
+      "description": "Bob Dylan takes us on a psychedelic journey with 'Mr. Tambourine Man.' Released in 1965, this folk-rock classic is a surreal exploration of creativity and consciousness, with Dylan's enigmatic lyrics and hypnotic melody capturing the spirit of the counterculture movement, making it a timeless anthem of liberation and exploration."
+    },
+    {
+      "rank": 4,
+      "song_name": "Turn! Turn! Turn! (To Everything There Is a Season)",
+      "artist": "The Byrds",
+      "year": 1965,
+      "description": "The Byrds channel the wisdom of Ecclesiastes with 'Turn! Turn! Turn! (To Everything There Is a Season).' Released in 1965, this folk-rock anthem became a rallying cry for peace and understanding, with its timeless message of hope and renewal resonating across generations, making it a beacon of light in times of darkness."
+    },
+    {
+      "rank": 5,
+      "song_name": "Both Sides, Now",
+      "artist": "Joni Mitchell",
+      "year": 1969,
+      "description": "Joni Mitchell contemplates the complexities of life with 'Both Sides, Now.' Released in 1969, this folk-pop gem is a meditation on love and loss, with Mitchell's ethereal vocals and poetic lyrics capturing the fleeting beauty of existence, making it a timeless reflection on the human condition."
+    },
+    {
+      "rank": 6,
+      "song_name": "Suzanne",
+      "artist": "Leonard Cohen",
+      "year": 1967,
+      "description": "Leonard Cohen offers a poetic tribute to love and longing with 'Suzanne.' Released in 1967, this folk-rock classic is a haunting meditation on the mysteries of the heart, with Cohen's deep baritone and vivid imagery painting a portrait of desire and transcendence that lingers long after the final chord fades."
+    },
+    {
+      "rank": 7,
+      "song_name": "Where Have All the Flowers Gone?",
+      "artist": "Pete Seeger",
+      "year": 1961,
+      "description": "Pete Seeger asks a poignant question with 'Where Have All the Flowers Gone?' Released in 1961, this folk anthem became an anti-war rallying cry, with its haunting melody and powerful lyrics urging us to remember the human cost of conflict, making it a timeless plea for peace and understanding."
+    },
+    {
+      "rank": 8,
+      "song_name": "If I Had a Hammer (The Hammer Song)",
+      "artist": "Peter, Paul and Mary",
+      "year": 1962,
+      "description": "Peter, Paul and Mary raise their voices for justice with 'If I Had a Hammer (The Hammer Song).' Released in 1962, this folk anthem became a rallying cry for the civil rights movement, with its stirring melody and defiant lyrics inspiring generations to fight for equality and freedom, making it a timeless testament to the power of song to change the world."
+    },
+    {
+      "rank": 9,
+      "song_name": "The Sound of Silence",
+      "artist": "Simon & Garfunkel",
+      "year": 1965,
+      "description": "Simon & Garfunkel explore the depths of solitude with 'The Sound of Silence.' Released in 1965, this folk-rock classic is a haunting meditation on alienation and despair, with its haunting melody and poetic lyrics capturing the quiet desperation of the modern world, making it a timeless reflection on the human condition."
+    },
+    {
+      "rank": 10,
+      "song_name": "Woodstock",
+      "artist": "Joni Mitchell",
+      "year": 1970,
+      "description": "Joni Mitchell takes us to the heart of the counterculture with 'Woodstock.' Released in 1970, this folk-rock anthem became an emblem of the peace and love movement, with its vivid imagery and anthemic chorus capturing the spirit of a generation in search of utopia, making it a timeless tribute to the power of music to unite and inspire."
+    },
+    {
+      "rank": 11,
+      "song_name": "House of the Rising Sun",
+      "artist": "The Animals",
+      "year": 1964,
+      "description": "The Animals haunt our folk countdown with 'House of the Rising Sun.' Released in 1964, this song is a chilling tale of sin and redemption, with its haunting melody and haunting lyrics capturing the dark allure of temptation, making it a timeless classic of folk-rock storytelling."
+    },
+    {
+      "rank": 12,
+      "song_name": "The Boxer",
+      "artist": "Simon & Garfunkel",
+      "year": 1969,
+      "description": "Simon & Garfunkel offer a glimpse into the heart of a troubadour with 'The Boxer.' Released in 1969, this folk-rock epic is a poignant meditation on the struggles of the artist, with its haunting melody and introspective lyrics capturing the pain and beauty of the creative journey, making it a timeless anthem for dreamers and seekers everywhere."
+    },
+    {
+      "rank": 13,
+      "song_name": "This Land Is Your Land",
+      "artist": "Woody Guthrie",
+      "year": 1944,
+      "description": "Woody Guthrie stakes his claim with 'This Land Is Your Land.' Written in 1940 but gaining popularity in the '60s, this folk anthem is a celebration of the American spirit, with its defiant lyrics and timeless melody inspiring generations to stand up and fight for the promise of freedom and equality, making it a timeless anthem of the people."
+    },
+    {
+      "rank": 14,
+      "song_name": "The Times They Are A-Changin'",
+      "artist": "Peter, Paul and Mary",
+      "year": 1964,
+      "description": "Peter, Paul and Mary echo the call for social change with their rendition of 'The Times They Are A-Changin'.' Originally written by Bob Dylan, this folk anthem became an anthem of the civil rights movement, with its powerful lyrics and defiant spirit rallying a generation to stand up and fight for their beliefs, making it a timeless rallying cry for justice and freedom."
+    },
+    {
+      "rank": 15,
+      "song_name": "Blowin' in the Wind",
+      "artist": "Peter, Paul and Mary",
+      "year": 1963,
+      "description": "Peter, Paul and Mary join the chorus of voices with their rendition of 'Blowin' in the Wind.' Originally written by Bob Dylan, this folk anthem became an anthem of the civil rights movement, with its powerful lyrics and haunting melody inspiring generations to seek justice and equality, making it a timeless testament to the power of music to change the world."
+    },
+    {
+      "rank": 16,
+      "song_name": "Puff, the Magic Dragon",
+      "artist": "Peter, Paul and Mary",
+      "year": 1963,
+      "description": "Peter, Paul and Mary spark the imagination with 'Puff, the Magic Dragon.' Released in 1963, this folk classic is a whimsical tale of friendship and adventure, with its gentle melody and poignant lyrics capturing the innocence and wonder of childhood, making it a timeless favorite for dreamers of all ages."
+    },
+    {
+      "rank": 17,
+      "song_name": "Society's Child (Baby I've Been Thinking)",
+      "artist": "Janis Ian",
+      "year": 1965,
+      "description": "Janis Ian tackles taboo with 'Society's Child (Baby I've Been Thinking).' Released in 1965, this folk-rock ballad is a courageous exploration of interracial romance, with Ian's poignant lyrics and soulful delivery challenging the prejudices of a divided society, making it a groundbreaking anthem of social change."
+    },
+    {
+      "rank": 18,
+      "song_name": "Both Sides Now",
+      "artist": "Judy Collins",
+      "year": 1967,
+      "description": "Judy Collins offers a soul-stirring rendition of 'Both Sides Now.' Originally written by Joni Mitchell, this folk-pop classic is a meditation on love and loss, with its haunting melody and poetic lyrics capturing the fleeting beauty of existence, making it a timeless reflection on the human condition."
+    },
+    {
+      "rank": 19,
+      "song_name": "Leaving on a Jet Plane",
+      "artist": "Peter, Paul and Mary",
+      "year": 1969,
+      "description": "Peter, Paul and Mary bid farewell with 'Leaving on a Jet Plane.' Released in 1969, this folk-pop classic is a bittersweet ballad of love and departure, with its heartfelt melody and poignant lyrics capturing the pain of saying goodbye, making it a timeless anthem for travelers and lovers alike."
+    },
+    {
+      "rank": 20,
+      "song_name": "Early Morning Rain",
+      "artist": "Gordon Lightfoot",
+      "year": 1966,
+      "description": "Gordon Lightfoot takes us on a journey with 'Early Morning Rain.' Released in 1966, this folk classic is a poignant meditation on loneliness and longing, with Lightfoot's haunting vocals and evocative lyrics capturing the beauty and melancholy of life on the road, making it a timeless favorite for travelers and dreamers everywhere."
+    },
+    {
+      "rank": 21,
+      "song_name": "If I Had a Hammer",
+      "artist": "Trini Lopez",
+      "year": 1963,
+      "description": "Trini Lopez raises his voice for justice with 'If I Had a Hammer.' Released in 1963, this folk anthem became a rallying cry for the civil rights movement, with its stirring melody and defiant lyrics inspiring generations to fight for equality and freedom, making it a timeless testament to the power of song to change the world."
+    },
+    {
+      "rank": 22,
+      "song_name": "Green, Green",
+      "artist": "The New Christy Minstrels",
+      "year": 1963,
+      "description": "The New Christy Minstrels paint a picture of pastoral beauty with 'Green, Green.' Released in 1963, this folk-pop gem is a celebration of nature's splendor, with its lush harmonies and sunny melodies capturing the simple joys of country living, making it a timeless ode to the green, green grass of home."
+    },
+    {
+      "rank": 23,
+      "song_name": "500 Miles",
+      "artist": "Peter, Paul and Mary",
+      "year": 1962,
+      "description": "Peter, Paul and Mary hit the road with '500 Miles.' Released in 1962, this folk classic is a rollicking tale of adventure and camaraderie, with its infectious melody and spirited vocals capturing the freedom and excitement of life on the open road, making it a timeless anthem for travelers and troubadours alike."
+    },
+    {
+      "rank": 24,
+      "song_name": "We Shall Overcome",
+      "artist": "Pete Seeger",
+      "year": 1963,
+      "description": "Pete Seeger leads the charge for justice with 'We Shall Overcome.' Released in 1963, this folk anthem became an anthem of the civil rights movement, with its stirring melody and defiant lyrics inspiring generations to stand up and fight for equality and freedom, making it a timeless testament to the power of music to change the world."
+    },
+    {
+      "rank": 25,
+      "song_name": "Scarborough Fair/Canticle",
+      "artist": "Simon & Garfunkel",
+      "year": 1966,
+      "description": "Simon & Garfunkel enchant us with 'Scarborough Fair/Canticle.' Released in 1966, this folk classic is a haunting tale of love and loss, with its intricate harmonies and evocative lyrics capturing the timeless beauty of an ancient ballad, making it a timeless favorite for romantics and dreamers alike."
+   }
+  ],
+    "soft_rock": [
+        {
+            "rank": 1,
+            "song_name": "Bridge Over Troubled Water",
+            "artist": "Simon & Garfunkel",
+            "year": 1970,
+            "description": "Simon & Garfunkel soothe our souls with 'Bridge Over Troubled Water.' Released in 1970, this soft rock ballad is a heartfelt ode to friendship and support, with its soaring vocals and emotional lyrics capturing the essence of compassion, making it a timeless favorite for lovers and dreamers alike."
+        },
+        {
+            "rank": 2,
+            "song_name": "California Dreamin'",
+            "artist": "The Mamas & the Papas",
+            "year": 1965,
+            "description": "The Mamas & the Papas take us on a journey to the Golden State with 'California Dreamin'.' Released in 1965, this soft rock classic is a wistful tribute to longing and nostalgia, with its haunting melody and evocative lyrics capturing the essence of the '60s counterculture, making it a timeless anthem of wanderlust and yearning."
+        },
+        {
+            "rank": 3,
+            "song_name": "Yesterday",
+            "artist": "The Beatles",
+            "year": 1965,
+            "description": "The Beatles serenade us with 'Yesterday.' Released in 1965, this soft rock ballad is a poignant reflection on love and loss, with its timeless melody and heartfelt lyrics capturing the universal experience of heartache, making it a timeless classic of the genre."
+        },
+        {
+            "rank": 4,
+            "song_name": "Let It Be",
+            "artist": "The Beatles",
+            "year": 1970,
+            "description": "The Beatles offer words of wisdom with 'Let It Be.' Released in 1970, this soft rock anthem is a comforting reminder to embrace acceptance and peace, with its uplifting melody and spiritual lyrics offering solace in times of trouble, making it a timeless favorite for seekers of truth and wisdom."
+        },
+        {
+            "rank": 5,
+            "song_name": "You've Got a Friend",
+            "artist": "James Taylor",
+            "year": 1971,
+            "description": "James Taylor extends a hand of friendship with 'You've Got a Friend.' Released in 1971, this soft rock ballad is a heartfelt tribute to companionship and loyalty, with its gentle melody and empathetic lyrics offering comfort and reassurance, making it a timeless favorite for friends and confidants alike."
+        },
+        {
+            "rank": 6,
+            "song_name": "Space Oddity",
+            "artist": "David Bowie",
+            "year": 1969,
+            "description": "David Bowie takes us on a cosmic journey with 'Space Oddity.' Released in 1969, this soft rock epic is a surreal exploration of space and isolation, with Bowie's ethereal vocals and haunting melody capturing the wonder and loneliness of the cosmos, making it a timeless classic of the genre."
+        },
+        {
+            "rank": 7,
+            "song_name": "Time of the Season",
+            "artist": "The Zombies",
+            "year": 1968,
+            "description": "The Zombies captivate us with 'Time of the Season.' Released in 1968, this soft rock classic is a sultry exploration of love and desire, with its hypnotic groove and seductive vocals capturing the essence of '60s romance, making it a timeless favorite for lovers and dreamers alike."
+        },
+        {
+            "rank": 8,
+            "song_name": "Wish You Were Here",
+            "artist": "Pink Floyd",
+            "year": 1975,
+            "description": "Pink Floyd offers a poignant tribute to absent friends with 'Wish You Were Here.' Released in 1975, this soft rock ballad is a haunting meditation on loss and longing, with its melancholy melody and introspective lyrics capturing the bittersweet beauty of memories, making it a timeless favorite for sentimental souls."
+        },
+        {
+            "rank": 9,
+            "song_name": "Ruby Tuesday",
+            "artist": "The Rolling Stones",
+            "year": 1967,
+            "description": "The Rolling Stones serenade us with 'Ruby Tuesday.' Released in 1967, this soft rock ballad is a tender reflection on love and freedom, with its gentle melody and heartfelt lyrics capturing the fleeting beauty of youth, making it a timeless classic of the genre."
+        },
+        {
+            "rank": 10,
+            "song_name": "God Only Knows",
+            "artist": "The Beach Boys",
+            "year": 1966,
+            "description": "The Beach Boys offer a heavenly ode to love with 'God Only Knows.' Released in 1966, this soft rock masterpiece is a symphony of devotion and longing, with its lush harmonies and heartfelt lyrics capturing the essence of unconditional love, making it a timeless favorite for romantics and dreamers alike."
+        },
+        {
+            "rank": 11,
+            "song_name": "Mrs. Robinson",
+            "artist": "Simon & Garfunkel",
+            "year": 1968,
+            "description": "Simon & Garfunkel serenade us with 'Mrs. Robinson.' Released in 1968, this soft rock classic is a playful tribute to a mysterious woman, with its catchy melody and witty lyrics capturing the enigmatic allure of Mrs. Robinson, making it a timeless favorite for fans of the duo."
+        },
+        {
+            "rank": 12,
+            "song_name": "I'm a Believer",
+            "artist": "The Monkees",
+            "year": 1966,
+            "description": "The Monkees spread joy and optimism with 'I'm a Believer.' Released in 1966, this soft rock anthem is a jubilant celebration of love and happiness, with its infectious chorus and upbeat melody capturing the spirit of youthful exuberance, making it a timeless favorite for fans of the band."
+        },
+        {
+            "rank": 13,
+            "song_name": "With a Little Help from My Friends",
+            "artist": "The Beatles",
+            "year": 1967,
+            "description": "The Beatles offer a hand of support with 'With a Little Help from My Friends.' Released in 1967, this soft rock anthem is a heartfelt tribute to friendship and camaraderie, with its uplifting melody and empowering lyrics offering solace in times of need, making it a timeless favorite for friends and confidants alike."
+        },
+        {
+            "rank": 14,
+            "song_name": "A Whiter Shade of Pale",
+            "artist": "Procol Harum",
+            "year": 1967,
+            "description": "Procol Harum enchants us with 'A Whiter Shade of Pale.' Released in 1967, this soft rock classic is a surreal journey through the corridors of memory, with its haunting organ riff and cryptic lyrics capturing the essence of '60s psychedelia, making it a timeless favorite for fans of the era."
+        },
+        {
+            "rank": 15,
+            "song_name": "The Sound of Silence",
+            "artist": "Simon & Garfunkel",
+            "year": 1964,
+            "description": "Simon & Garfunkel captivate us with 'The Sound of Silence.' Released in 1964, this soft rock ballad is a haunting meditation on the human condition, with its plaintive melody and introspective lyrics capturing the silence that echoes within us all, making it a timeless classic of the genre."
+        },
+        {
+            "rank": 16,
+            "song_name": "Scarborough Fair/Canticle",
+            "artist": "Simon & Garfunkel",
+            "year": 1966,
+            "description": "Simon & Garfunkel enchant us with 'Scarborough Fair/Canticle.' Released in 1966, this soft rock classic is a haunting tale of love and loss, with its intricate harmonies and evocative lyrics capturing the timeless beauty of an ancient ballad, making it a timeless favorite for romantics and dreamers alike."
+        },
+        {
+            "rank": 17,
+            "song_name": "Wild Horses",
+            "artist": "The Rolling Stones",
+            "year": 1971,
+            "description": "The Rolling Stones serenade us with 'Wild Horses.' Released in 1971, this soft rock ballad is a tender reflection on love and freedom, with its gentle melody and heartfelt lyrics capturing the beauty of a wild and untamed heart, making it a timeless classic of the genre."
+        },
+        {
+            "rank": 18,
+            "song_name": "Something",
+            "artist": "The Beatles",
+            "year": 1969,
+            "description": "The Beatles serenade us with 'Something.' Released in 1969, this soft rock ballad is a tender tribute to love and devotion, with its timeless melody and heartfelt lyrics capturing the essence of true romance, making it a timeless favorite for lovers and dreamers alike."
+        },
+        {
+            "rank": 19,
+            "song_name": "Light My Fire",
+            "artist": "The Doors",
+            "year": 1967,
+            "description": "The Doors ignite our passion with 'Light My Fire.' Released in 1967, this soft rock anthem is a fiery declaration of desire and liberation, with its hypnotic groove and poetic lyrics capturing the spirit of '60s rebellion, making it a timeless favorite for fans of rock music."
+        },
+        {
+            "rank": 20,
+            "song_name": "Fire and Rain",
+            "artist": "James Taylor",
+            "year": 1970,
+            "description": "James Taylor bares his soul with 'Fire and Rain.' Released in 1970, this soft rock ballad is a poignant reflection on loss and redemption, with its intimate lyrics and soulful melody capturing the beauty and pain of the human experience, making it a timeless favorite for seekers of truth and understanding."
+        },
+        {
+            "rank": 21,
+            "song_name": "Suite: Judy Blue Eyes",
+            "artist": "Crosby, Stills & Nash",
+            "year": 1969,
+            "description": "Crosby, Stills & Nash serenade us with 'Suite: Judy Blue Eyes.' Released in 1969, this soft rock epic is a tapestry of love and longing, with its intricate harmonies and poetic lyrics capturing the essence of a generation in search of meaning and connection, making it a timeless classic of the genre."
+        },
+        {
+            "rank": 22,
+            "song_name": "Proud Mary",
+            "artist": "Creedence Clearwater Revival",
+            "year": 1969,
+            "description": "Creedence Clearwater Revival rocks our world with 'Proud Mary.' Released in 1969, this soft rock anthem is a rollicking celebration of freedom and adventure, with its infectious groove and spirited vocals capturing the spirit of the open road, making it a timeless favorite for fans of rock music."
+        },
+        {
+            "rank": 23,
+            "song_name": "Eight Miles High",
+            "artist": "The Byrds",
+            "year": 1966,
+            "description": "The Byrds take us on a psychedelic journey with 'Eight Miles High.' Released in 1966, this soft rock classic is a mind-bending exploration of consciousness and transcendence, with its jangly guitars and surreal lyrics capturing the essence of '60s psychedelia, making it a timeless favorite for fans of the era."
+        },
+        {
+            "rank": 24,
+            "song_name": "For What It's Worth",
+            "artist": "Buffalo Springfield",
+            "year": 1966,
+            "description": "Buffalo Springfield sounds the alarm with 'For What It's Worth.' Released in 1966, this soft rock anthem is a rallying cry for peace and justice, with its iconic guitar riff and defiant lyrics capturing the spirit of '60s activism, making it a timeless classic of the genre."
+        },
+        {
+            "rank": 25,
+            "song_name": "Lay Lady Lay",
+            "artist": "Bob Dylan",
+            "year": 1969,
+            "description": "Bob Dylan seduces us with 'Lay Lady Lay.' Released in 1969, this soft rock ballad is a sensual ode to love and intimacy, with Dylan's smoky vocals and sultry melody creating a mood of romance and desire, making it a timeless favorite for lovers and dreamers alike."
+        }
+    ]
+}
