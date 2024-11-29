@@ -1,4 +1,5 @@
 # 01:11 11/4/24
+
 import webbrowser
 import json
 from dotenv import load_dotenv
@@ -11,6 +12,7 @@ import textwrap
 from rich import print
 from rich.console import Console
 from gtts import gTTS
+import requests
 
 
 load_dotenv()
@@ -91,7 +93,9 @@ def main():
         track_name = track['name']
         track_id = track['id']
         print(f'Track Name = {track_name:<50}  Track ID = {track_id}')
-        play_track(token, track_id)
+
+        test_spotify_api(token)
+        # play_spotify_track(token, track_id)
 
         # webbrowser.open(f"https://open.spotify.com/track/{track_id}")
 
@@ -251,5 +255,73 @@ def play_track(token, track_id):
         print(result)
      '''
 
+def play_spotify_track(token, track_id):
+    """
+    Play a Spotify track by its ID.
+
+    Args:
+        token (str): Spotify access token with the necessary scopes.
+        track_id (str): The Spotify track ID to play.
+
+    Returns:
+        None
+    """
+    # Endpoint to transfer playback to an active device
+    transfer_playback_url = "https://api.spotify.com/v1/me/player"
+    # Endpoint to start/resume playback
+    play_track_url = "https://api.spotify.com/v1/me/player/play"
+
+    # Get currently active device
+    headers = {"Authorization": f"Bearer {token}"}
+    response = requests.get(f"{transfer_playback_url}/devices", headers=headers)
+
+    if response.status_code == 200:
+        devices = response.json().get("devices", [])
+        if not devices:
+            print("No active devices found. Please open Spotify on a device and try again.")
+            return
+        active_device_id = next((d["id"] for d in devices if d["is_active"]), devices[0]["id"])
+
+        # Transfer playback to the active device (if needed)
+        requests.put(transfer_playback_url, headers=headers, json={"device_ids": [active_device_id]})
+
+        # Start playback of the track
+        play_response = requests.put(
+            play_track_url,
+            headers=headers,
+            json={"uris": [f"spotify:track:{track_id}"]}
+        )
+
+        if play_response.status_code == 204:
+            print("Track is playing!")
+        else:
+            print("Failed to play track:", play_response.json())
+    else:
+        print(f"Error: {response.status_code}, {response.json()}")  # Log error details
+        # print("Failed to retrieve devices:", response.json())
+
+def test_spotify_api(token):
+    headers = {"Authorization": f"Bearer {token}"}
+
+    # Test the token by calling the `/me` endpoint
+    me_url = "https://api.spotify.com/v1/me"
+    me_response = requests.get(me_url, headers=headers)
+    if me_response.status_code == 200:
+        print("User Info:", me_response.json())
+    else:
+        print(f"/me endpoint failed: {me_response.status_code}, {me_response.json()}")
+        return
+
+    # Test the `/devices` endpoint
+    devices_url = "https://api.spotify.com/v1/me/player/devices"
+    devices_response = requests.get(devices_url, headers=headers)
+    if devices_response.status_code == 200:
+        devices = devices_response.json().get("devices", [])
+        if not devices:
+            print("No active devices found.")
+        else:
+            print("Available Devices:", devices)
+    else:
+        print(f"/devices endpoint failed: {devices_response.status_code}, {devices_response.json()}")
 
 main()

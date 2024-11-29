@@ -1,0 +1,103 @@
+Here is a complete Python program that uses Spotify's Authorization Code Flow to authenticate a user, find a track by artist and song title, and play the track on the user's active device. The program uses the spotipy library to simplify Spotify API interactions.
+Prerequisites
+
+    Install the spotipy library:
+
+    pip install spotipy
+
+    Create a Spotify Developer Application:
+        Visit the Spotify Developer Dashboard.
+        Create an app and note the Client ID, Client Secret, and Redirect URI.
+
+Full Python Program
+
+import spotipy
+from spotipy.oauth2 import SpotifyOAuth
+
+# Spotify API credentials
+CLIENT_ID = "your_client_id"
+CLIENT_SECRET = "your_client_secret"
+REDIRECT_URI = "http://localhost:8888/callback"
+
+# Scopes required for the program
+SCOPES = "user-read-playback-state user-modify-playback-state user-read-private"
+
+def authenticate_spotify():
+    """
+    Authenticates the user and returns a Spotipy client object.
+    """
+    sp = spotipy.Spotify(auth_manager=SpotifyOAuth(
+        client_id=CLIENT_ID,
+        client_secret=CLIENT_SECRET,
+        redirect_uri=REDIRECT_URI,
+        scope=SCOPES
+    ))
+    return sp
+
+def search_track(sp, artist_name, track_name):
+    """
+    Searches for a track on Spotify using the artist name and track title.
+    """
+    query = f"artist:{artist_name} track:{track_name}"
+    results = sp.search(q=query, type="track", limit=1)
+    if results["tracks"]["items"]:
+        track = results["tracks"]["items"][0]
+        print(f"Found track: {track['name']} by {track['artists'][0]['name']}")
+        return track["id"]
+    else:
+        print("Track not found!")
+        return None
+
+def play_track(sp, track_id):
+    """
+    Plays the specified track on the user's active device.
+    """
+    devices = sp.devices()
+    if devices["devices"]:
+        active_device = devices["devices"][0]
+        print(f"Playing on device: {active_device['name']}")
+        sp.start_playback(uris=[f"spotify:track:{track_id}"])
+    else:
+        print("No active devices found. Please open Spotify on one of your devices.")
+
+def main():
+    # Step 1: Authenticate and get the Spotipy client
+    sp = authenticate_spotify()
+
+    # Step 2: Get user input for artist and song title
+    artist_name = input("Enter artist name: ")
+    track_name = input("Enter song title: ")
+
+    # Step 3: Search for the track
+    track_id = search_track(sp, artist_name, track_name)
+    if track_id:
+        # Step 4: Play the track
+        play_track(sp, track_id)
+
+if __name__ == "__main__":
+    main()
+
+Program Workflow
+
+    User Authentication:
+        The program authenticates the user and requests the required scopes:
+            user-read-playback-state: Check the current playback state.
+            user-modify-playback-state: Control playback.
+            user-read-private: Access user account details.
+    Search for the Track:
+        Uses the Spotify Search API to find the track by the artist and song title.
+    Play the Track:
+        Identifies the user's active device and plays the track using the Spotify Playback API.
+
+How to Run
+
+    Replace your_client_id, your_client_secret, and http://localhost:8888/callback in the script with your Spotify Developer App details.
+    Run the program:
+
+    python spotify_player.py
+
+    Enter the artist's name and song title when prompted.
+    Open Spotify on any device (mobile, desktop, etc.) and ensure it's active.
+
+Let me know if you need further customization or additional functionality!
+
