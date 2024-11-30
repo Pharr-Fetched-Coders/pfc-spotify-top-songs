@@ -1,24 +1,12 @@
-'''
-Here is a complete Python program that uses Spotify's Authorization Code Flow to authenticate a user, find a track by artist and song title, and play the track on the user's active device. The program uses the spotipy library to simplify Spotify API interactions.
-Prerequisites
-
-    Install the spotipy library:
-
-    pip install spotipy
-
-    Create a Spotify Developer Application:
-        Visit the Spotify Developer Dashboard.
-        Create an app and note the Client ID, Client Secret, and Redirect URI.
-
-Full Python Program
-'''
 
 import spotipy
 from spotipy.oauth2 import SpotifyOAuth
 from dotenv import load_dotenv
 import os
 
-load_dotenv()
+# This file in my new branch
+
+load_dotenv()   # Import environment variables from .env file
 CLIENT_ID = os.getenv("CLIENT_ID")
 CLIENT_SECRET = os.getenv("CLIENT_SECRET")
 USER_ID = os.getenv("SPOTIFY_USER_ID")
@@ -86,32 +74,4 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
-
-'''
-Program Workflow
-
-    User Authentication:
-        The program authenticates the user and requests the required scopes:
-            user-read-playback-state: Check the current playback state.
-            user-modify-playback-state: Control playback.
-            user-read-private: Access user account details.
-    Search for the Track:
-        Uses the Spotify Search API to find the track by the artist and song title.
-    Play the Track:
-        Identifies the user's active device and plays the track using the Spotify Playback API.
-
-How to Run
-
-    Replace your_client_id, your_client_secret, and http://localhost:8888/callback in the script with your Spotify Developer App details.
-    Run the program:
-
-    python spotify_player.py
-
-    Enter the artist's name and song title when prompted.
-    Open Spotify on any device (mobile, desktop, etc.) and ensure it's active.
-
-Let me know if you need further customization or additional functionality!
-'''
 
