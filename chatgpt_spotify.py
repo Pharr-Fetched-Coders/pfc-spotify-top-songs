@@ -1,4 +1,5 @@
 # Branch: gary-readJSON
+from enum import global_enum_repr
 
 import spotipy
 from spotipy.oauth2 import SpotifyOAuth
@@ -8,8 +9,8 @@ import json
 import textwrap
 from rich import print
 from rich.console import Console
-from gtts import gTTS
-import requests
+# from gtts import gTTS
+# import requests
 
 load_dotenv()   # Import environment variables from .env file
 CLIENT_ID = os.getenv("CLIENT_ID")
@@ -52,12 +53,12 @@ def play_track(sp, track_id):
     # Plays the specified track on the user's active device.
     devices = sp.devices()
     # Print all devices for debugging
+    my_device_id = None
     for device in devices['devices']:
         # print(f"Name: {device['name']}, ID: {device['id']}, Active: {device['is_active']}")
         my_device_id = device['id']
 
     if devices["devices"]:
-        active_device = devices["devices"][0]
         # print(f"Playing on device: {active_device['name']}")
         sp.start_playback(device_id=my_device_id, uris=[f"spotify:track:{track_id}"])
     else:
@@ -80,10 +81,16 @@ def print_track_description(all_songs, genre, song_index):
     console.rule("[bold red]Description End")
     print()
 
-
 def main():
     # Step 1: Authenticate and get the Spotipy client
     sp = authenticate_spotify()
+
+    # Pick a decade for your music playlist
+
+    # View the list of songs by genre in your chosen decade
+    # and choose the genre you want to listen to
+
+
 
     # initial_setup of json
     file_name = '1960s.json'
@@ -91,12 +98,15 @@ def main():
     # Was getting error with ' char, needed to set this encoding
     with open(file_name, 'r', encoding="utf-8") as f:
         all_songs = json.load(f)
-
-    for song in all_songs["soft_rock"]:
+    genre = "country"
+    for song in all_songs[genre]:
         artist_name = song["artist"]
         track_name = song["song_name"]
-        print(f"{song['rank']:>5}   {song['year']:<2}   {artist_name:<30}   {track_name}")
-        print_track_description(all_songs, "soft_rock", song["rank"]-1)
+        print()
+        print(f"   Genre: {genre:<5}  {decade:<5}   Rank # {song['rank']}   Released in {song['year']:<2}")
+        print()
+        print(f"   Artist: {artist_name}    Song: {track_name}")
+        print_track_description(all_songs, genre, song["rank"]-1)
 
         input("Press Enter to Start Playing Track . . .")
         print()
@@ -105,17 +115,6 @@ def main():
         play_track(sp, track_id)
         input("Press Enter to Go On to next Track. . .")
         print()
-
-    # Step 2: Get user input for artist and song title
-    # artist_name = input("Enter artist name: ")
-    # track_name = input("Enter song title: ")
-
-    # Step 3: Search for the track
-    # track_id = search_track(sp, artist_name, track_name)
-    # print(track_id)
-    # if track_id:
-        # Step 4: Play the track
-        # play_track(sp, track_id)
 
 if __name__ == "__main__":
     main()
