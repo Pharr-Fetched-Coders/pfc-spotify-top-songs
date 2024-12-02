@@ -1,6 +1,6 @@
 # Branch: gary-readJSON
 from enum import global_enum_repr
-
+import time
 import spotipy
 from spotipy.oauth2 import SpotifyOAuth
 from dotenv import load_dotenv
@@ -43,8 +43,9 @@ def search_track(sp, artist_name, track_name):
     if results["tracks"]["items"]:
         track = results["tracks"]["items"][0]
         print(f"Found track: {track['name']} by {track['artists'][0]['name']}")
-        print(track)
-        return track["id"]
+        # print(track)
+
+        return track["id"], track["duration_ms"]
     else:
         print("Track not found!")
         return None
@@ -104,17 +105,20 @@ def main():
         artist_name = song["artist"]
         track_name = song["song_name"]
         print()
-        print(f"   Genre: {genre:<5}  {decade:<5}   Rank # {song['rank']}   Released in {song['year']:<2}")
+        print(f"   Rank # {song['rank']}  Genre: {genre:<5}  Decard: {decade:<5}   Released:{song['year']:<2}")
         print()
         print(f"   Artist: {artist_name}    Song: {track_name}")
         print_track_description(all_songs, genre, song["rank"]-1)
 
-        input("Press Enter to Start Playing Track . . .")
+        time.sleep(7)
+        # input("Press Enter to Start Playing Track . . .")
         print()
 
-        track_id = search_track(sp, artist_name, track_name)
+        duration_ms = 0
+        track_id, duration_ms = search_track(sp, artist_name, track_name)
         play_track(sp, track_id)
-        input("Press Enter to Go On to next Track. . .")
+        print(f'Duration_ms = {duration_ms}')
+        time.sleep(duration_ms/1000)
         print()
 
 if __name__ == "__main__":
