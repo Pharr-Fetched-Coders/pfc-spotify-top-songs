@@ -6,9 +6,11 @@ from spotipy.oauth2 import SpotifyOAuth
 from dotenv import load_dotenv
 import os
 import json
+from gtts import gTTS
 import textwrap
 from rich import print
 from rich.console import Console
+from playsound import playsound
 # from gtts import gTTS
 # import requests
 
@@ -68,6 +70,8 @@ def play_track(sp, track_id):
 
 def print_track_description(all_songs, genre, song_index):
 
+
+
     # Print out the top header
     console = Console(width=60)
     print()
@@ -83,6 +87,13 @@ def print_track_description(all_songs, genre, song_index):
     console.rule("[bold red]Description End")
     print()
 
+    # Create a speech file of description
+    tts = gTTS(all_songs[genre][song_index]['description'])
+    tts.save("speech.mp3")
+    time.sleep(1)
+    playsound("speech.mp3")
+    time.sleep(1)
+
 def main():
     # Step 1: Authenticate and get the Spotipy client
     sp = authenticate_spotify()
@@ -95,7 +106,7 @@ def main():
 
 
     # initial_setup of json
-    file_name = '1960s.json'
+    file_name = '1970s.json'
     decade = file_name[:5]
     # Was getting error with ' char, needed to set this encoding
     with open(file_name, 'r', encoding="utf-8") as f:
@@ -110,7 +121,9 @@ def main():
         print(f"   Artist: {artist_name}    Song: {track_name}")
         print_track_description(all_songs, genre, song["rank"]-1)
 
-        time.sleep(7)
+
+
+        time.sleep(1)
         # input("Press Enter to Start Playing Track . . .")
         print()
 
@@ -118,7 +131,7 @@ def main():
         track_id, duration_ms = search_track(sp, artist_name, track_name)
         play_track(sp, track_id)
         print(f'Duration_ms = {duration_ms}')
-        time.sleep(duration_ms/1000)
+        time.sleep(duration_ms/1000/10)
         print()
 
 if __name__ == "__main__":
