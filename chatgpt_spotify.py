@@ -42,7 +42,8 @@ def search_track(sp, artist_name, track_name):
     results = sp.search(q=query, type="track", limit=1)
     if results["tracks"]["items"]:
         track = results["tracks"]["items"][0]
-        # print(f"Found track: {track['name']} by {track['artists'][0]['name']}")
+        print(f"Found track: {track['name']} by {track['artists'][0]['name']}")
+        print(track)
         return track["id"]
     else:
         print("Track not found!")
