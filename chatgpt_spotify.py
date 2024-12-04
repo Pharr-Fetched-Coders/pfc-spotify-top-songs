@@ -68,15 +68,24 @@ def play_track(sp, track_id):
         print("No active devices found. Please open Spotify on one of your devices.")
 
 def print_track_description(all_songs, genre, song_index):
-
     # Print out the top header
-    console = Console(width=120)
+    console = Console(width=60)
     print()
     console.rule("[bold red]Description Start")
     print()
 
-    pyfiglet_text = pyfiglet.figlet_format(f"{song_index-1}-   {all_songs[genre][song_index]['artist']}")
+    pyfiglet_text = pyfiglet.figlet_format(f"{song_index+1}  {all_songs[genre][song_index]['artist']}")
     print(pyfiglet_text)
+
+    # Print out the track description
+    wrapped_text = textwrap.fill(all_songs[genre][song_index]['description'], width=60)
+    console.print(wrapped_text, justify="center")
+    print()
+
+    # Print out the bottom header
+    console.rule("[bold red]Description End")
+    print()
+
 
     # input('Press Enter to Play Description . . .')
     # Create a speech file of description
@@ -136,16 +145,16 @@ def main():
         print_track_description(all_songs, genre, song["rank"]-1)
 
         # Wait for the description to finish playing
-        description_wait_time = 5
+        description_wait_time = 2
         time.sleep(description_wait_time)
         play_track(sp, track_id)
 
         time.sleep(1)
-        # input("Press Enter to Start Playing Track . . .")
+        input("Press Enter to Start Playing Track . . .")
         print()
 
 
-        time.sleep(duration_ms/1000)
+        # time.sleep(duration_ms/1000)
         print()
 
 if __name__ == "__main__":
