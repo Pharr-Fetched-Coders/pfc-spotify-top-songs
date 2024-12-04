@@ -11,8 +11,7 @@ import textwrap
 from rich import print
 from rich.console import Console
 from playsound import playsound
-# from gtts import gTTS
-# import requests
+import pyfiglet
 
 load_dotenv()   # Import environment variables from .env file
 CLIENT_ID = os.getenv("CLIENT_ID")
@@ -70,29 +69,33 @@ def play_track(sp, track_id):
 
 def print_track_description(all_songs, genre, song_index):
 
-
-
     # Print out the top header
-    console = Console(width=60)
+    console = Console(width=120)
     print()
     console.rule("[bold red]Description Start")
     print()
 
-    # Print out the track description
-    wrapped_text = textwrap.fill(all_songs[genre][song_index]['description'], width=50)
-    console.print(wrapped_text, justify="center")
-    print()
+    pyfiglet_text = pyfiglet.figlet_format(f"{song_index-1}-   {all_songs[genre][song_index]['artist']}")
+    print(pyfiglet_text)
 
-    # Print out the bottom header
-    console.rule("[bold red]Description End")
-    print()
-
+    # input('Press Enter to Play Description . . .')
     # Create a speech file of description
+
+    # Remove the previous speech file if it exists
+    if os.path.exists("speech.mp3"):
+        os.remove("speech.mp3")
+
     tts = gTTS(all_songs[genre][song_index]['description'])
-    tts.save("speech.mp3")
-    time.sleep(1)
-    playsound("speech.mp3")
-    time.sleep(1)
+    try:
+        tts.save("speech.mp3")
+    except Exception as e:
+        print(f"Error saving speech file: {e}")
+
+    # input('Press Enter to Play Description . . .')
+    try:
+        playsound("speech.mp3")
+    except:
+        print("Error playing speech file")
 
 def main():
     # Step 1: Authenticate and get the Spotipy client
@@ -106,32 +109,43 @@ def main():
 
 
     # initial_setup of json
-    file_name = '1970s.json'
+    file_name = '1960s.json'
     decade = file_name[:5]
     # Was getting error with ' char, needed to set this encoding
     with open(file_name, 'r', encoding="utf-8") as f:
         all_songs = json.load(f)
-    genre = "country"
+    genre = "folk"
     for song in all_songs[genre]:
         artist_name = song["artist"]
         track_name = song["song_name"]
+
+        duration_ms = 0
+        track_id, duration_ms = search_track(sp, artist_name, track_name)
+        total_seconds = duration_ms // 1000
+        minutes = total_seconds // 60
+        seconds = total_seconds % 60
+        print(f'Duration_ms = {duration_ms}')
+
+        # Clear the screen
+        os.system('cls' if os.name == 'nt' else 'clear')
+        # print("\033[H\033[J")
         print()
-        print(f"   Rank # {song['rank']}  Genre: {genre:<5}  Decard: {decade:<5}   Released:{song['year']:<2}")
+        print(f"   Rank # {song['rank']}  Genre: {genre}  Decade: {decade}   Released: {song['year']}")
         print()
-        print(f"   Artist: {artist_name}    Song: {track_name}")
+        print(f"   Artist: {artist_name}    Song: {track_name}, Duration: {minutes}:{seconds:02}")
         print_track_description(all_songs, genre, song["rank"]-1)
 
-
+        # Wait for the description to finish playing
+        description_wait_time = 5
+        time.sleep(description_wait_time)
+        play_track(sp, track_id)
 
         time.sleep(1)
         # input("Press Enter to Start Playing Track . . .")
         print()
 
-        duration_ms = 0
-        track_id, duration_ms = search_track(sp, artist_name, track_name)
-        play_track(sp, track_id)
-        print(f'Duration_ms = {duration_ms}')
-        time.sleep(duration_ms/1000/10)
+
+        time.sleep(duration_ms/1000)
         print()
 
 if __name__ == "__main__":
