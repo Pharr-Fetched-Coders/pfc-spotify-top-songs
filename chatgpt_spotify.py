@@ -14,6 +14,7 @@ import pyfiglet
 import time
 import threading
 import keyboard
+import sys
 
 load_dotenv()   # Import environment variables from .env file
 CLIENT_ID = os.getenv("CLIENT_ID")
@@ -26,6 +27,7 @@ print()
 SCOPES = "user-read-playback-state user-modify-playback-state user-read-private"
 
 break_sleep = False
+skip_speech = True
 
 def authenticate_spotify():
     """
@@ -106,18 +108,16 @@ def print_track_description(all_songs, genre, song_index):
     except Exception as e:
         print(f"Error saving speech file: {e}")
 
-    # input('Press Enter to Play Description . . .')
-    try:
+    if not skip_speech:
         playsound("speech.mp3")
-    except:
-        print("Error playing speech file")
 
 def listen_for_keypress():
     global break_sleep
     while True:
         event = keyboard.read_event()  # Waits for any key event (press or release)
-        print(f"Event: {event}")
-        if event.event_type == "down":  # Triggers only on key press (not release)
+        # print(f"Event: {event}")
+        if keyboard.is_pressed('esc'):
+        # if event.event_type == "down":  # Triggers only on key press (not release)
             print('Break Sleep')
             break_sleep = True
             break
@@ -134,11 +134,26 @@ def main():
     # View the list of songs by genre in your chosen decade
     # and choose the genre you want to listen to
 
+    # Format of CLI
+    # sys.argv[1] = filename  eg. 1960s
+    # sys.argv[2] = genre   eg. folk
+    # sys.argv[3] = mode    eg. top, bottom, random
+    # sys.argv[4] = start_index  eg. 1-25
 
 
-    # initial_setup of json
     file_name = '1960s.json'
+    genre = "folk"
+    mode = "start"
+    start_index = 1
+    if len(sys.argv) > 1:
+        file_name = sys.argv[1]
+    if len(sys.argv) > 2:
+        genre = sys.argv[2]
+
     decade = file_name[:5]
+
+    print(file_name, genre, mode, start_index)
+
     # Was getting error with ' char, needed to set this encoding
     with open(file_name, 'r', encoding="utf-8") as f:
         all_songs = json.load(f)
@@ -155,7 +170,7 @@ def main():
         print(f'Duration_ms = {duration_ms}')
 
         # Clear the screen
-        os.system('cls' if os.name == 'nt' else 'clear')
+        # os.system('cls' if os.name == 'nt' else 'clear')
         # print("\033[H\033[J")
         print()
         print(f"   Rank # {song['rank']}  Genre: {genre}  Decade: {decade}   Released: {song['year']}")
