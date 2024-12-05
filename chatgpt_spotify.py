@@ -1,6 +1,5 @@
 # Branch: gary-readJSON
-from enum import global_enum_repr
-import time
+# from enum import global_enum_repr
 import spotipy
 from spotipy.oauth2 import SpotifyOAuth
 from dotenv import load_dotenv
@@ -12,6 +11,9 @@ from rich import print
 from rich.console import Console
 from playsound import playsound
 import pyfiglet
+import time
+import threading
+import keyboard
 
 load_dotenv()   # Import environment variables from .env file
 CLIENT_ID = os.getenv("CLIENT_ID")
@@ -22,6 +24,8 @@ REDIRECT_URI = "http://localhost:8888/callback"
 print()
 # Scopes required for the program
 SCOPES = "user-read-playback-state user-modify-playback-state user-read-private"
+
+break_sleep = False
 
 def authenticate_spotify():
     """
@@ -67,6 +71,8 @@ def play_track(sp, track_id):
     else:
         print("No active devices found. Please open Spotify on one of your devices.")
 
+    return my_device_id
+
 def print_track_description(all_songs, genre, song_index):
     # Print out the top header
     console = Console(width=60)
@@ -106,7 +112,20 @@ def print_track_description(all_songs, genre, song_index):
     except:
         print("Error playing speech file")
 
+def listen_for_keypress():
+    global break_sleep
+    while True:
+        event = keyboard.read_event()  # Waits for any key event (press or release)
+        print(f"Event: {event}")
+        if event.event_type == "down":  # Triggers only on key press (not release)
+            print('Break Sleep')
+            break_sleep = True
+            break
+
+
 def main():
+
+    global break_sleep
     # Step 1: Authenticate and get the Spotipy client
     sp = authenticate_spotify()
 
@@ -147,15 +166,34 @@ def main():
         # Wait for the description to finish playing
         description_wait_time = 2
         time.sleep(description_wait_time)
-        play_track(sp, track_id)
+        my_device_id = play_track(sp, track_id)
 
         time.sleep(1)
-        input("Press Enter to Start Playing Track . . .")
+        # input("Press Enter to Start Playing Track . . .")
         print()
 
+        # Flag to control the loop
+        break_sleep = False
+
+        # Start a thread to listen for key press
+        listener_thread = threading.Thread(target=listen_for_keypress)
+        listener_thread.daemon = True
+        listener_thread.start()
+
+        # Simulate a long-running task
+        run_seconds = int(duration_ms/1000)
+        print(f"Starting sleep, press any key to interrupt, seconds = {run_seconds}")
+
+        for _ in range(run_seconds):  # Sleep in chunks of 1 second
+            if break_sleep:
+                print("Sleep interrupted")
+                break
+            time.sleep(1)
+        else:
+            print("Completed sleep without interruption")
 
         # time.sleep(duration_ms/1000)
-        print()
+        sp.pause_playback(device_id=my_device_id)
 
 if __name__ == "__main__":
     main()
