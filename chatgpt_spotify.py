@@ -27,7 +27,7 @@ print()
 SCOPES = "user-read-playback-state user-modify-playback-state user-read-private"
 
 break_sleep = False
-skip_speech = True
+skip_speech = False
 
 def authenticate_spotify():
     """
@@ -102,13 +102,10 @@ def print_track_description(all_songs, genre, song_index):
     if os.path.exists("speech.mp3"):
         os.remove("speech.mp3")
 
-    tts = gTTS(all_songs[genre][song_index]['description'])
-    try:
-        tts.save("speech.mp3")
-    except Exception as e:
-        print(f"Error saving speech file: {e}")
 
     if not skip_speech:
+        tts = gTTS(all_songs[genre][song_index]['description'])
+        tts.save("speech.mp3")
         playsound("speech.mp3")
 
 def listen_for_keypress():
