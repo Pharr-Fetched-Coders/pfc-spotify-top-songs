@@ -9,7 +9,7 @@ from gtts import gTTS
 import textwrap
 from rich import print
 from rich.console import Console
-from playsound import playsound
+from playsound3 import playsound
 import pyfiglet
 import time
 import threading
@@ -204,8 +204,10 @@ def main():
         else:
             print("Completed sleep without interruption")
 
-        # time.sleep(duration_ms/1000)
-        sp.pause_playback(device_id=my_device_id)
+        # This will stop the playback if interrupted by key press
+        if break_sleep:
+            sp.pause_playback(device_id=my_device_id)
+            break_sleep = False
 
 if __name__ == "__main__":
     main()
