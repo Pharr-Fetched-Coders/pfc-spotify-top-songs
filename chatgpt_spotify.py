@@ -15,6 +15,7 @@ import time
 import threading
 import keyboard
 import sys
+import random
 
 load_dotenv()   # Import environment variables from .env file
 CLIENT_ID = os.getenv("CLIENT_ID")
@@ -27,7 +28,7 @@ print()
 SCOPES = "user-read-playback-state user-modify-playback-state user-read-private"
 
 break_sleep = False
-skip_speech = False
+skip_speech = True
 
 def authenticate_spotify():
     """
@@ -140,8 +141,9 @@ def main():
 
     file_name = '1960s.json'
     genre = "folk"
-    mode = "start"
-    start_index = 1
+    mode = "forward"
+    start_index = 0
+
     if len(sys.argv) > 1:
         file_name = sys.argv[1]
     if len(sys.argv) > 2:
@@ -154,7 +156,29 @@ def main():
     # Was getting error with ' char, needed to set this encoding
     with open(file_name, 'r', encoding="utf-8") as f:
         all_songs = json.load(f)
-    genre = "folk"
+
+
+    songs = all_songs[genre]
+    n = len(songs)
+
+    if mode == "forward":
+        for i in range(start_index, n):
+            print(songs[i])
+
+    elif mode == "backward":
+        for i in range(start_index, -1, -1):
+            print(songs[i])
+
+    elif mode == "random":
+        visited = set()  # To avoid duplicates
+        while len(visited) < n:
+            index = random.randint(0, n - 1)
+            if index not in visited:
+                visited.add(index)
+                print(songs[index])
+
+    input('Press Enter to Continue . . .')
+
     for song in all_songs[genre]:
         artist_name = song["artist"]
         track_name = song["song_name"]
@@ -179,10 +203,6 @@ def main():
         description_wait_time = 2
         time.sleep(description_wait_time)
         my_device_id = play_track(sp, track_id)
-
-        time.sleep(1)
-        # input("Press Enter to Start Playing Track . . .")
-        print()
 
         # Flag to control the loop
         break_sleep = False
