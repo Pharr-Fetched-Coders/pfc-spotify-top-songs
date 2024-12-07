@@ -28,7 +28,7 @@ print()
 SCOPES = "user-read-playback-state user-modify-playback-state user-read-private"
 
 break_sleep = False
-skip_speech = True
+skip_speech = False
 
 def authenticate_spotify():
     """
@@ -76,18 +76,18 @@ def play_track(sp, track_id):
 
     return my_device_id
 
-def print_track_description(all_songs, genre, song_index):
+def print_track_description(song, genre, song_index):
     # Print out the top header
     console = Console(width=60)
     print()
     console.rule("[bold red]Description Start")
     print()
 
-    pyfiglet_text = pyfiglet.figlet_format(f"{song_index+1}  {all_songs[genre][song_index]['artist']}")
+    pyfiglet_text = pyfiglet.figlet_format(f"{song_index+1}  {song['artist']}")
     print(pyfiglet_text)
 
     # Print out the track description
-    wrapped_text = textwrap.fill(all_songs[genre][song_index]['description'], width=60)
+    wrapped_text = textwrap.fill(song['description'], width=60)
     console.print(wrapped_text, justify="center")
     print()
 
@@ -105,7 +105,7 @@ def print_track_description(all_songs, genre, song_index):
 
 
     if not skip_speech:
-        tts = gTTS(all_songs[genre][song_index]['description'])
+        tts = gTTS(song['description'])
         tts.save("speech.mp3")
         playsound("speech.mp3")
 
@@ -120,6 +120,44 @@ def listen_for_keypress():
             break_sleep = True
             break
 
+
+def play_song(sp, song, genre, decade):
+
+    artist_name = song["artist"]
+    track_name = song["song_name"]
+
+    duration_ms = 0
+    track_id, duration_ms = search_track(sp, artist_name, track_name)
+    total_seconds = duration_ms // 1000
+    minutes = total_seconds // 60
+    seconds = total_seconds % 60
+    print(f'Duration_ms = {duration_ms}')
+
+    # Clear the screen
+    # os.system('cls' if os.name == 'nt' else 'clear')
+    # print("\033[H\033[J")
+    print()
+    print(f"   Rank # {song['rank']}  Genre: {genre}  Decade: {decade}   Released: {song['year']}")
+    print()
+    print(f"   Artist: {artist_name}    Song: {track_name}, Duration: {minutes}:{seconds:02}")
+    print_track_description(song, genre, song["rank"] - 1)
+
+    # Wait for the description to finish playing
+    description_wait_time = 2
+    time.sleep(description_wait_time)
+    my_device_id = play_track(sp, track_id)
+
+    # Flag to control the loop
+    break_sleep = False
+
+    # Start a thread to listen for key press
+    listener_thread = threading.Thread(target=listen_for_keypress)
+    listener_thread.daemon = True
+    listener_thread.start()
+
+    # Simulate a long-running task
+    run_seconds = int(duration_ms / 1000)
+    print(f"Starting sleep, press any key to interrupt, seconds = {run_seconds}")
 
 def main():
 
@@ -163,7 +201,8 @@ def main():
 
     if mode == "forward":
         for i in range(start_index, n):
-            print(songs[i])
+            # print(songs[i])
+            play_song(sp, songs[i], genre, decade)
 
     elif mode == "backward":
         for i in range(start_index, -1, -1):
@@ -177,8 +216,8 @@ def main():
                 visited.add(index)
                 print(songs[index])
 
-    input('Press Enter to Continue . . .')
 
+'''
     for song in all_songs[genre]:
         artist_name = song["artist"]
         track_name = song["song_name"]
@@ -228,6 +267,7 @@ def main():
         if break_sleep:
             sp.pause_playback(device_id=my_device_id)
             break_sleep = False
+'''
 
 if __name__ == "__main__":
     main()
