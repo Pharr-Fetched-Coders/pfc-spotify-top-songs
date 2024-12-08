@@ -162,9 +162,24 @@ def play_song(sp, song, genre, decade):
     listener_thread.daemon = True
     listener_thread.start()
 
+
     # Simulate a long-running task
     run_seconds = int(duration_ms / 1000)
     print(f"Starting sleep, press any key to interrupt, seconds = {run_seconds}")
+
+    for _ in range(run_seconds):  # Sleep in chunks of 1 second
+        if break_sleep:
+            print("Sleep interrupted")
+            break
+        time.sleep(1)
+    else:
+        print("Completed sleep without interruption")
+
+    # This will stop the playback if interrupted by key press
+    if break_sleep:
+        sp.pause_playback(device_id=my_device_id)
+        break_sleep = False
+
 
 def main():
     global break_sleep
@@ -240,9 +255,9 @@ def main():
 
 
         # This will stop the playback if interrupted by key press
-        if break_sleep:
-            sp.pause_playback(device_id='Gary-Music')
-            break_sleep = False
+        # if break_sleep:
+        #     sp.pause_playback(device_id='Gary-Music')
+        #     break_sleep = False
 
 
 if __name__ == "__main__":
