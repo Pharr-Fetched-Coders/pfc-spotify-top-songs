@@ -28,7 +28,7 @@ print()
 SCOPES = "user-read-playback-state user-modify-playback-state user-read-private"
 
 break_sleep = False
-skip_speech = True
+skip_speech = False
 
 
 def authenticate_spotify():
@@ -60,7 +60,7 @@ def search_track(sp, artist_name, track_name):
         return None
 
 def play_track(sp, track_id):
-
+    global break_sleep
     # Plays the specified track on the user's active device.
     devices = sp.devices()
     # Print all devices for debugging
@@ -74,6 +74,14 @@ def play_track(sp, track_id):
         sp.start_playback(device_id=my_device_id, uris=[f"spotify:track:{track_id}"])
     else:
         print("No active devices found. Please open Spotify on one of your devices.")
+
+
+    # This will stop the playback if interrupted by key press
+    if break_sleep:
+        print('break_sleep: Pausing playback')
+        sp.pause_playback(device_id=my_device_id)
+        break_sleep = False
+
 
     return my_device_id
 
@@ -103,7 +111,6 @@ def print_track_description(song, genre, song_index):
     # Remove the previous speech file if it exists
     if os.path.exists("speech.mp3"):
         os.remove("speech.mp3")
-
 
     if not skip_speech:
         tts = gTTS(song['description'])
@@ -141,14 +148,14 @@ def play_song(sp, song, genre, decade):
     print()
     print(f"   Artist: {artist_name}    Song: {track_name}, Duration: {minutes}:{seconds:02}")
     print_track_description(song, genre, song["rank"] - 1)
-
+    global break_sleep
     # Wait for the description to finish playing
     description_wait_time = 2
     time.sleep(description_wait_time)
     my_device_id = play_track(sp, track_id)
 
     # Flag to control the loop
-    # break_sleep = False
+    break_sleep = False
 
     # Start a thread to listen for key press
     listener_thread = threading.Thread(target=listen_for_keypress)
@@ -160,7 +167,6 @@ def play_song(sp, song, genre, decade):
     print(f"Starting sleep, press any key to interrupt, seconds = {run_seconds}")
 
 def main():
-
     global break_sleep
     # Step 1: Authenticate and get the Spotipy client
     sp = authenticate_spotify()
@@ -231,6 +237,12 @@ def main():
                 visited.add(index)
                 # print(songs[index])
                 play_song(sp, songs[index], genre, decade)
+
+
+        # This will stop the playback if interrupted by key press
+        if break_sleep:
+            sp.pause_playback(device_id='Gary-Music')
+            break_sleep = False
 
 
 if __name__ == "__main__":
